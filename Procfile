@@ -1,1 +1,1 @@
-web: gunicorn app: sockettest
+web: gunicorn app: app
