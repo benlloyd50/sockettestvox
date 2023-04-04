@@ -30,7 +30,7 @@
             function leave_room() {
                 socket.emit('left', {}, function() {
                     socket.disconnect();
-
+                    //nugget
                     // go back to the login page
                     window.location.href = "{{ url_for('main.index') }}";
                 });
