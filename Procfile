@@ -1,2 +1,2 @@
 web: gunicorn app: app
-web: gunicorn run: app
+gunicorn --worker-class eventlet -w 1 module:app
